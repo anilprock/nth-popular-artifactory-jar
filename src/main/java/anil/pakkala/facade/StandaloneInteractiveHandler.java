@@ -116,7 +116,7 @@ public class StandaloneInteractiveHandler {
                 ArtifactoryFacade artifactoryFacade = new ArtifactoryFacade(artifactoryClient);
                 List<ArtifactDownloadCount> ranking = artifactoryFacade.getMostPopularJar(repo, size, workers, threads, page);
 
-                System.out.println(size + "most popular Results:");
+                System.out.println(size + " most popular Results:");
                 for (ArtifactDownloadCount item : ranking) {
                     System.out.println(item.getDownloadCount() + ": " + item.getArtifact().getRepositoryPath());
                 }
